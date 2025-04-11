@@ -1,40 +1,68 @@
 <!DOCTYPE html> 
 <html lang="es"> 
-<head> 
- <meta charset="iso-8859-1">  
- <meta name="description" content="Ejemplo de HTML5">
- <meta name="keywords" content="HTML5, CSS3, JavaScript">
+<head>  
+ <meta charset="UTF-8">
  <title>Dulce Land Pasteleria</title> 
- <link rel=”stylesheet” href=”misestilos.css”/>
+ <link rel="stylesheet" href="css/styles.css">
+ 
+
 </head> 
 <body> 
-<h5>--aqui un borde rosa pastel con el nombrr y la lista--</h5>
-<header>
-  <h1>Dulce Land</h1>  
-</header>
-  <ul>
-  <p>inicio</p> 
-  <p>productos</p>
-  <p>contacto</p> 
-  <p>como comprar</p> 
-  </ul>   
-  
-<img src="imagen/banner_pastel.jpg" width="1200" height="500" alt="">
-  
 
-  <h3>En nuestra pasteleria,cada postre es un abrazo dulce:creaciones suaves,delicadas y llenas de ternura 
+<header>   
+
+  <div class="contenedor-header"> 
+  <h1 class="titulo">Dulce Land</h1>  
+  
+  
+  <nav>
+  <ul class="nav-lista">  
+   
+  <p>inicio</p> 
+  <p>sobre nosotros</p>
+  <p>contacto</p>
+  <p>como comprar</p>  
+  
+ 
+  </ul> 
+  </nav> 
+  </div>
+
+ 
+  </header>
+  
+  <section class="banner">
+  
+<img id="imagen" src="images/banner_pastel.jpg" alt="Banner" class="banner-img" >
+  
+  </section>
+
+ 
+  <h2 class="productos">No olvides pasar a ver nuetros productos</h2> 
+  
+  
+  <h3 class="acaricia-alma">En nuestra pasteleria,cada postre es un abrazo dulce:creaciones suaves,delicadas y llenas de ternura 
   que acarician el alma y despiertan sonrisas en cada bocado</h3>
-  <h2><u>No olvides pasar a ver nuetros productos</h2></u>  
+  
   <h5>--imagenes con precios de los productos--</h5>
   <br>
   <br>
-  <h2> si quieres ser parte de nuestro equipo </h2>
+  
+  
+  <h2 class="equipo"> si quieres ser parte de nuestro equipo </h2>
+  
+   
+  
+   <div class="caja-contacto"> 
   <form> 
     <p><label for="nombre"> Nombre: <input type="text" id="nombre"></label></p> 
 	<p><label for="apellido"> Apellido: <input type="text" id="apellido"></label></p> 
 	<p><label for="correo"> Correo: <input type="text" id="correo"></label></p>
-	<p><label for="tu"> Cuentanos sobre vos: <textarea id="tu"></textarea></label></p>
+	<p><label for="tu"> tu especialidad: <textarea id="tu"></textarea></label></p>
 	<button type="submit"> enviar </button>
+	
+	</div>
+	
   
   
   
@@ -43,10 +71,3 @@
   </body> 
   
   
-  
-  
-  
-  
-
-  
- 

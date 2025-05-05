@@ -1,9 +1,12 @@
+
 body{
 	
 	margin:0; 
 	font-family:Arial,sans-serif;
+
 	
 } 
+
 
 header{
 	
@@ -25,27 +28,29 @@ header{
 	color:white;
 }
 
-.nav-lista{
-	
-	list-style:none; 
-	margin:0;
-	padding:0;
-	display:flex;
-	color:white;
-	gap:20px;
-} 
+/*lista de navegacion*/
 
-.nav-lista li{ 
 
-   color:white;
-   text-decoration:none;
-   font-weight:bold;
-   
+.nav-lista a {
+  color: white!important;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-lista a:hover {
+  background-color:#FC90B7 ; 
+  color: white!important;
 }
 
 .nav-lista li shover{
 	
-	text-decoration:underline;
+	text-decoration:underline; 
+	
+	
 }
 
 .banner-img{
@@ -57,6 +62,10 @@ header{
 	
 } 
 
+
+
+/*fondo rosa texto explicativo*/
+
 .productos{
 	
 	background-color:pink; 
@@ -66,6 +75,9 @@ header{
 	margin:0;
 	
 } 
+
+/* texto largo explicativo*/
+
 
 .acaricia-alma{
 	
@@ -78,6 +90,8 @@ header{
 	text-align:center; 
 	margin:0;
 } 
+
+/* porductos img y caracteristicas*/
 
 .productos-img{
 	
@@ -100,11 +114,16 @@ header{
   transition: transform 0.3s ease;
 }
 
+
+
+/* animacion de img*/
+
 .galeria img:hover {
   transform: scale(1.05);
   
 }
 
+/* titulo de texto productos*/
 
 .linea-texto {
   display: flex;
@@ -117,22 +136,18 @@ header{
   font-weight: 500;
 }
 
+/*linea de texto productos*/
+
 .linea-texto::before,
 .linea-texto::after {
   content: "";
-  flex: 1;
+  flex: 1; 
   border-bottom: 2px solid #f7c5cc; 
   margin: 0 15px;
 }
-.producto-con-precio {
-  position: relative;
-  display: inline-block;
-}
 
-.producto-con-precio img {
-  width: 300px;
-  border-radius: 20px;
-}
+
+/* color de letra menu encabezado*/ 
 
 a {
   color: white; 
@@ -140,9 +155,37 @@ a {
   font-weight: bold; 
 }
 
+/* color fondo de letra menu*/
+
 a:hover {
   
   color: #ff7aa2; 
 }
-	
+
+/* parte baja iconos redes*/
+
+footer {
+  background-color: pink; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer .redes {
+  margin-top: 10px;
+}
+
+footer .redes a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer .redes a:hover {
+  color: #C3D9EE; 
+}
+
 	

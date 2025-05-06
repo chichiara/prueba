@@ -1,2 +1,4 @@
-console.log("funciona el java yei");
-alert("esta funcionando.");
+window.addEventListener('DOMContentLoaded', () => {
+  const titulo = document.getElementById('titulo');
+  titulo.classList.add('mostrar');
+});

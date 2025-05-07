@@ -56,6 +56,8 @@ header{
 	
 }
 
+/* banner img de torta*/ 
+
 .banner-img{
 	
 	width:100%; 
@@ -63,7 +65,18 @@ header{
 	object-fit:cover;
 	display:block;
 	
-} 
+}  
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease;
+}
+
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
 
 
 
@@ -94,7 +107,19 @@ header{
 	text-align:center; 
 	margin:0;
 	
-} 
+}
+	
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 /* porductos img y caracteristicas*/
 
@@ -116,9 +141,28 @@ header{
   width: 300px;
   border-radius: 20px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+  
+}
+
+
+.zoom-img {
   transition: transform 0.3s ease;
 }
 
+.zoom-img:hover {
+  transform: scale(1.08); 
+}
+
+.col-md-3 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+.col-md-3.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -150,9 +194,25 @@ header{
 	background-color: #C3D9EE; 
 	max-width: 1500px;
 	padding: 10px;
+	border-radius: 100px;
+	display:absolute;  
+	
+
+	
+} 
+
+.caja-productos h2 {
+	
+	background-color: pink; 
+	max-width: 1500px;
+	padding: 10px;
 	border-radius: 10px;
-	display:absolute;
+	display:absolute;  
+	
+	
+	
 }
+
 
 /* sobre nosotros */ 
 
@@ -161,10 +221,10 @@ header{
 
 .sobre-nosotros {
   background-color: #fff9df;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   max-width: 1100px;
-  margin: auto;
+    margin: 40px auto;
 }
 
 .texto-nosotros {
@@ -174,6 +234,19 @@ header{
 	
 }
 
+
+
+
+.aparecer {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.aparecer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -230,6 +303,4 @@ footer .redes a {
 footer .redes a:hover {
   color: #C3D9EE; 
 }
-
-
 

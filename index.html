@@ -5,10 +5,8 @@
  <title>Dulce Land Pasteleria</title> 
  <link rel="stylesheet" href="css/styles.css">  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 
@@ -34,40 +32,63 @@ html{
 
 <header>   
 
-  <div class="contenedor-header"> 
-  <h1 class="titulo aparecer">Dulce Land</h1>  
-  
+
   <section id="inicio">
   
-  
-  
-  <!-- barra de navegacion -->
-  
  
- 
-  <ul class="nav-lista aparecer">
+
   
+  
+  <div class="contenedor-header"> 
+  <div class="logo aparecer">
+    <img src="images/logo.png" alt="Logo de la empresa">
+  </div>
+
+
+  <!-- barra de navegación --> 
+  
+  <nav class="menu aparecer">
     <a href="#inicio">Inicio</a>
     <a href="#productos">Productos</a> 
-	<a href="#nosotros">sobre nosotros</a>
+    <a href="#nosotros">Sobre nosotros</a>
     <a href="formu.html">Contacto</a>
-    
 	
 	
   </nav>
-  </ul>
-  
+</div>
+
 
  </section>
- 
+ </header>
+ <main>
  <!-- imagen de cabezera -->
-  </header>
   
-  <section class="banner">
   
-<img id="imagen zoom-in" src="images/banner_pastel.jpg" alt="Banner" class="banner-img" >
+
   
-  </section>
+  <div id="carouselExample" class="carousel slide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="300"> 
+  
+  <div class="carousel-inner"> 
+  
+  <div class="carousel-item active"> 
+  <img id="imagen" src="images/img1.jpg" class="d-block w-100" alt="imagen1" > 
+  </div>
+
+   <div class="carousel-item active"> 
+  <img id="imagen" src="images/img2.jpg" class="d-block w-100" alt="imagen2" >  
+   </div> 
+   
+  <div class="carousel-item active"> 
+  <img id="imagen" src="images/img3.jpg" class="d-block w-100" alt="imagen3" > 
+  </div> 
+  
+
+  </div> 
+  </div>
+  
+  
+ 
+
 
 
 <!-- muestra de productos -->
@@ -91,12 +112,20 @@ html{
   <!-- img productos bootstrap-->
   
   
+   
     
-	
-   <div class="caja-productos container">
+	 <div class="caja-productos container">
 
   <h1 class="produ-titulo"> Productos </h1> 
   
+  
+  <div class="text-center mt-4 mb-3">
+  <button class="filtro-btn" data-categoria="todos">Todos</button>
+  <button class="filtro-btn" data-categoria="torta">Tortas</button>
+  <button class="filtro-btn" data-categoria="cupcake">Cupcakes</button>
+  <button class="filtro-btn" data-categoria="galletas">Galletas</button>
+  <button class="filtro-btn" data-categoria="dona">Donas</button>
+</div>
   
   <div class="container mt-5">
   
@@ -105,52 +134,75 @@ html{
 	
     <div class="col-6 col-md-3 mb-4 text-center tarjeta-producto  aparecer">
       <img class="zoom-img "src="https://plus.unsplash.com/premium_photo-1716309257485-49b29b39be0f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dG9ydGFzJTIwY29sb3JlcyUyMHBhc3RlbGVzfGVufDB8MXwwfHx8MA%3D%3D"  style="height: 250px; width:200px; object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   ">
-      <h2 class="mt-2 fw-bold ">$1500</h2> 
-	   <p class="mt-2 fw-bold zoom-img">comprar</p> 
+       <p class="mt-4"> Tortita individual colores </p>
+	   <h2 class="mt-2">$1500</h2> 
+	   <h5 class="boton-comprar">comprar</h5>
+	   
     </div>
 
     <div class="col-6 col-md-3 mb-4 text-center tarjeta-producto aparecer">
       <img class="zoom-img" src="https://images.unsplash.com/photo-1687542172889-55fb2d01f55d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvcnRhcyUyMGNvbG9yZXMlMjBwYXN0ZWxlc3xlbnwwfDF8MHx8fDA%3D" style="height: 250px;width:200px; object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-      <h2 class="mt-2 fw-bold">$1800</h2> 
-	   <p class="mt-2 fw-bold zoom-img">comprar</p> 
+         <p class="mt-4"> cupcake fantasia </p>
+	  <h2 class="mt-2">$1800</h2>  
+	   <h5 class="boton-comprar">comprar</h5>
+	 
 	   
     </div>
 
     <div class="col-6 col-md-3 mb-4  text-center tarjeta-producto aparecer">
       <img class="zoom-img" src="https://images.unsplash.com/photo-1562101294-150201d42c50?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHRvcnRhcyUyMGNvbG9yZXMlMjBwYXN0ZWxlc3xlbnwwfDF8MHx8fDA%3D" style="height: 250px;width:200px; object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-      <h2 class="mt-2 fw-bold">$2000</h2>
-	   <p class="mt-2 fw-bold zoom-img">comprar</p> 
+        <p class="mt-4"> Tortita larga colorida </p>
+	 <h2 class="mt-2">$2000</h2>
+	  <h5 class="boton-comprar">comprar</h5>
 	   
     </div>
 
       <div class="col-6 col-md-3 mb-4  text-center  tarjeta-producto aparecer">
       <img class="zoom-img" src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fHRvcnRhcyUyMGNvbG9yZXMlMjBwYXN0ZWxlc3xlbnwwfDF8MHx8fDA%3D" style="height: 250px;width:200px; object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-      <h2 class="mt-2 fw-bold">$1800</h2>
-	   <p class="mt-2 fw-bold zoom-img">comprar</p> 
+         <p class="mt-4"> torta grande completa </p>
+	  <h2 class="mt-2">$1800</h2>
+	    <h5 class="boton-comprar">comprar</h5>
 	   
     </div>
 	
 	   <div class="col-6 col-md-3 mb-4  text-center tarjeta-producto aparecer">
       <img class="zoom-img" src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fHBhc3RlbGVyaWElMjBjb2xvcmVzJTIwcGFzdGVsZXN8ZW58MHwxfDB8fHw"  style="height: 250px;width:200px; object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-      <h2 class="mt-2 fw-bold">$1800</h2>
-	   <p class="mt-2 fw-bold zoom-img">comprar</p> 
+         <p class="mt-4"> macarrones franceses </p>
+	  <h2 class="mt-2">$1500</h2>
+	    <h5 class="boton-comprar">comprar</h5>
+	  
 	   
     </div>
 	
 	   <div class=" col-6 col-md-3 mb-4 text-center tarjeta-producto aparecer">
       <img class="zoom-img" src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"  style="height: 250px; width:200px;object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-      <h2 class="mt-2 fw-bold">$1800</h2>
-	   <p class="mt-2 fw-bold zoom-img">comprar</p> 
+         <p class="mt-4"> Torta con macarrones  </p>
+	  <h2 class="mt-2">$1800</h2>
+	    <h5 class="boton-comprar">comprar</h5>
+	   
+	   
 	   
     </div>
 	
-	
+	 <div class=" col-6 col-md-3 mb-4 text-center tarjeta-producto aparecer">
+      <img class="zoom-img" src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  style="height: 250px; width:200px;object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+         <p class="mt-4"> Tartitas frutales  </p>
+	  <h2 class="mt-2">$1900</h2>
+	    <h5 class="boton-comprar">comprar</h5>
+	   
   </div>
 
+
+ <div class=" col-6 col-md-3 mb-4 text-center tarjeta-producto aparecer">
+      <img class="zoom-img" src="https://images.unsplash.com/photo-1582293041079-7814c2f12063?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  style="height: 250px; width:200px;object-fit: cover;border-radius: 20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+         <p class="mt-4"> Donas magicas  </p>
+	  <h2 class="mt-2">$1800</h2>
+	   <h5 class="boton-comprar">comprar</h5>
+	   
 </div>
   
-  </div>
-  
+
+
   </section>
   
   <!-- sobre nosotros fotos y texto con bootstrap--> 
@@ -186,29 +238,74 @@ html{
   </section>
   
   
+  <section class="info-beneficios">
+  <div class="beneficio aparecer">
+    <i class="fas fa-truck"></i>
+    <div>
+      <h4>ENVÍOS A CABA Y GBA</h4>
+      <p>Hacé tu pedido y te lo entregamos en 48HS</p>
+    </div>
+  </div>
+  <div class="beneficio aparecer">
+    <i class="fas fa-credit-card"></i>
+    <div>
+      <h4>PAGÁ COMO QUIERAS</h4>
+      <p>Tarjetas de crédito o Mercado Pago</p>
+    </div>
+  </div>
+  <div class="beneficio aparecer">
+    <i class="fas fa-lock"></i>
+    <div>
+      <h4>COMPRÁ CON SEGURIDAD</h4>
+      <p>Tus datos siempre protegidos</p>
+    </div>
+  </div>
+</section>
+  
+  
   
   <!-- iconos redes -->
   
   <footer>
-  
-  <div class="redes">
-    <p>Seguinos en redes:</p>
-    <div class="redes">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <div class="footer-contenedor">
+    <div class="footer-navegacion">
+      <h4>Navegación</h4>
+	  
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">sobre nosotros</a></li>
+      </ul>
+	  
     </div>
-    <p>&copy; 2025 Dulce Land</p>
-  </div>
-  
-</footer>
 
+    <div class="footer-redes">
+      <h4>Seguinos en redes</h4>
+      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+
+    <div class="footer-mapa"> 
+	
+	  <h4> Ubicacion </h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26248.806632496126!2d-58.66767225563966!3d-34.67740461440776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1747199384251!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+	 
+      </iframe>
+    </div>
+  </div>
 
  
+</footer>
+
+<p style="margin:20px ; position:center">© 2025 Dulce Land</p>
+ 
  <script src="js/main.js"></script>  
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
    </body> 
-  </html>
-  
+  </html> 
+  </main>
   
   

@@ -25,3 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500);
     });
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const botones = document.querySelectorAll(".filtro-btn"); 
+  const productos = document.querySelectorAll(".tarjeta-producto");
+
+  botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+      const categoria = boton.getAttribute("data-categoria");
+
+      botones.forEach(btn => btn.classList.remove("active")); 
+      boton.classList.add("active");
+
+      productos.forEach(producto => {
+        const nombre = producto.querySelector("p").textContent.toLowerCase();
+
+        if (categoria === "todos" || nombre.includes(categoria)) {
+          producto.classList.remove("oculto");
+          producto.classList.add("aparecer");
+        } else {
+          producto.classList.remove("aparecer");
+          producto.classList.add("oculto");
+        }
+      });
+    });
+  });
+});
